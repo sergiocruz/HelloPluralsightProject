@@ -4,13 +4,13 @@
   "description": "Sample Pluralsight Project",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/npm-run-all  -p -r test:code test:notify",
-    "test:code": "./node_modules/.bin/mocha test/",
-    "test:notify": "./node_modules/.bin/mocha --reporter reporter.js test/ | node ping.js",
+    "test": "npm-run-all -s test:notify test:code",
+    "test:code": "mocha test/",
+    "test:notify": "mocha --reporter json test/ | node ping.js",
     "deploy:github-pages": "git subtree push --prefix src origin gh-pages",
-    "test-watch": "./node_modules/.bin/npm-run-all  -p -r test-watch:code test-watch:notify",
-    "test-watch:code": "./node_modules/.bin/mocha test/ --bail --watch --watch-extensions html",
-    "test-watch:notify": "./node_modules/.bin/mocha test/ --reporter reporter.js --watch --watch-extensions html | node ping.js"
+    "test-watch": "npm-run-all  -p -r test-watch:code test-watch:notify",
+    "test-watch:code": "mocha test/ --bail --watch --watch-extensions html",
+    "test-watch:notify": "mocha test/ --reporter json --watch --watch-extensions html | node ping.js"
   },
   "author": "Adam Fortuna",
   "license": "MIT",
