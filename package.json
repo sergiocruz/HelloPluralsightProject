@@ -1,0 +1,23 @@
+{
+  "name": "hello-pluralsight-project",
+  "version": "1.0.0",
+  "description": "Sample Pluralsight Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/npm-run-all  -p -r test:code test:notify",
+    "test:code": "./node_modules/.bin/mocha test/",
+    "test:notify": "./node_modules/.bin/mocha --reporter reporter.js test/ | node ping.js",
+    "deploy:github-pages": "git subtree push --prefix src origin gh-pages",
+    "test-watch": "./node_modules/.bin/npm-run-all  -p -r test-watch:code test-watch:notify",
+    "test-watch:code": "./node_modules/.bin/mocha test/ --bail --watch --watch-extensions html",
+    "test-watch:notify": "./node_modules/.bin/mocha test/ --reporter reporter.js --watch --watch-extensions html | node ping.js"
+  },
+  "author": "Adam Fortuna",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jsdom": "^9.2.1",
+    "mocha": "^2.5.3",
+    "npm-run-all": "^4.0.2"
+  }
+}
