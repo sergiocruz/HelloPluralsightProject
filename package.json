@@ -7,7 +7,7 @@
     "test": "npm-run-all -s test:notify test:code",
     "test:code": "mocha test/",
     "test:notify": "mocha --reporter json test/ | node ping.js",
-    "deploy:github-pages": "git subtree push --prefix src origin gh-pages",
+    "deploy:github-pages": "git push origin master:gh-pages",
     "test-watch": "npm-run-all  -p -r test-watch:code test-watch:notify",
     "test-watch:code": "mocha test/ --bail --watch --watch-extensions html",
     "test-watch:notify": "mocha test/ --reporter json --watch --watch-extensions html | node ping.js"

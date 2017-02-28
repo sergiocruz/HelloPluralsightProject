@@ -18,9 +18,9 @@ You'll edit a basic HTML page, as well as fork a GitHub repository and clone it 
 
 Here's what you'll build in this project:
 
-![screenshot.png](Screenshot)
+![Screenshot](https://raw.githubusercontent.com/pluralsight-projects/HelloPluralsightProject/master/screenshot.png)
 
-### What You’ll Need
+### What You’ll Need To Complete This Project
 
 You'll need to have access to the following tools on your local machine to complete this project.
 
@@ -57,6 +57,11 @@ In order to get this working, you'll need to have [Git](https://git-scm.com/) in
 
 To get started, fork this repository to your account and clone it down locally. We'll be editing the "index.html" file in the root directory for this project.
 
+### Associate Project with Pluralsight
+
+After cloning this repository down, copy the ".projects_config" file from the [HelloPluralsightProject](#) and save that to this directory. This will allow your status to be reflected on the website while you're working through the project locally!
+
+[//]: # (install: "npm install")
 ### Installation
 
 Run the following command to install all dependencies.
@@ -65,6 +70,8 @@ Run the following command to install all dependencies.
 $ npm install
 ```
 
+[//]: # (test: "npm test")
+[//]: # (test-watch: "npm test-watch")
 ### Verify Setup
 
 In order to verify that everything is setup correctly, run the following command. You should see a list of failing tests. This is good! Each of these tests corresponds to something we'll be working on in this project. By the end, all of the tests will pass.
@@ -73,7 +80,7 @@ In order to verify that everything is setup correctly, run the following command
 $ npm test
 ```
 
-We recommend running the following command, which will watch for any changes to your files, then run your tests automatically. This makes things easier, since you'll see updates immediately when you save your files!
+We recommend running the following command, which will watch for any changes to your files, then run your tests automatically. This makes things easier, since you'll see updates immediately when you save your files! You can run this command once, then look back at it after you've made changes to the "index.html" file.
 
 ```
 $ npm test-watch
@@ -82,6 +89,7 @@ $ npm test-watch
 
 
 [//]: # (project_id: hello-pluralsight)
+[//]: # (test: node_modules/.bin/mocha test/hello-pluralsight_test.js)
 ## Hello Pluralsight
 
 [//]: # (task_id: @title)
@@ -108,53 +116,14 @@ In these `li` elements, list out what you want to learn.
 
 
 
-# Checking Your Work
-
-Once you've completed all of the tasks, go ahead and commit those to your fork of this repository and push it up to GitHub. Follow the directions on [Hello Code School](https://www.codeschool.com/projects/hello-code-school) to submit your project and get feedback from Code School.
-
-## Running Tests Locally
-
-You don't need to run and of the tests locally -- they'll all run when you submit your project. If you're an overachiever and want to try running the tests locally, here's what you'll need to do.
-
-First off, install [node.js](https://nodejs.org/en/) locally. Next you'll need to run a few commands from this folder.
-
-```
-$ npm install
-$ npm test
-```
-
-If everything is working, you should see something like this:
-
-```
-HelloCodeSchoolProject (answer) $ npm test
-
-> hello-codeschool-project@1.0.0 test /Users/adam/code/projects/HelloCodeSchoolProject
-> mocha test/
-
-
-
-  Your HTML Page
-    ✓ should have a different title
-    ✓ should have a different h1
-    ✓ should have a ul
-    ✓ should have at least 2 li elements
-
-
-  4 passing (306ms)
-```
-
-# Making it Public
+## Next Steps
 
 Once all tests are passing, try pushing your master branch up to the `gh-pages` branch -- this will make your webpage available on the web! Here's a command to do that:
 
 ```
-$ git push origin master:gh-pages
+$ npm run deploy:github-pages
 ```
 
 This will make your `index.html` file available at the URL:
 
-`http://<username>.github.io/HelloCodeSchoolProject/`
-
-# Another Answer
-
-If you want to checkout one other possible solution to this problem and compare your work, you can checkout the `solution` branch.
+`http://<username>.github.io/HelloPluralsightProject/`
