@@ -4,7 +4,7 @@
 
 ## Short Description
 
-This is a sample project to test out how projects work at Pluralsight. For this project, you'll be creating a basic website using HTML. If you want to deploy it to a real website, we'll even walkthrough how to do that!
+This is a sample project to test out how Projects work at Pluralsight. For this project, you'll be creating a basic website using HTML. If you want to deploy it to a real website, we'll even walkthrough how to do that!
 
 
 
@@ -12,7 +12,7 @@ This is a sample project to test out how projects work at Pluralsight. For this 
 
 ### Project Overview
 
-Learn the basics of Pluralsight projects with this quick introduction, and become comfortable using Git and GitHub — even if you’ve never used them before.
+Learn the basics of Pluralsight Projects with this quick introduction, and become comfortable using Git and GitHub — even if you’ve never used them before.
 
 You'll edit a basic HTML page, as well as fork a GitHub repository and clone it down locally.
 
