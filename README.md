@@ -20,7 +20,7 @@ Here's what you'll build in this project:
 
 ![Screenshot](https://raw.githubusercontent.com/pluralsight-projects/HelloPluralsightProject/master/screenshot.png)
 
-### What You’ll Need To Complete This Project
+### Applications and Tools You'll Need To Complete This Project
 
 You'll need to have access to the following tools on your local machine to complete this project.
 
@@ -28,20 +28,19 @@ You'll need to have access to the following tools on your local machine to compl
 * GitHub
 * Code Editor
 * Command Line / Terminal Access
-* Docker
 
 Never used Git and don’t have a code editor? We have a video that walks you through all the steps you’ll need to set this up.
 
-### Prerequisites
+### Prerequisite Knowledge
 
-In order to complete this project, you'll need to know the basics of HTML! Aside from that, you'll need a local computer where you can install git, and edit some files. We'll walk you through that part, so if you haven't used Git before -- don't worry. We recommend that you should have already completed the following Pluralsight Courses:
+Completing all of the tasks in this project requires knowledge of basic HTML.  You'll also need to have a working knowledge of git to commit local changes and push them up to a GitHub repository.  We'll walk you through that part, so if you haven't used Git before -- don't worry. We recommend that you should have already completed the following Pluralsight Courses:
 
-* [Todo Basic HTML Course 1](#)
+* [HTML Fundamentals](https://app.pluralsight.com/library/courses/html-fundamentals/table-of-contents)
 
 And have an understanding of the following topics:
 
-* Know what an HTML tag looks like
-* Know some of the most common tags -- `title`, `h1`, `ul`, `li`.
+* Know what an HTML tag looks like and how to add one to an existing HTML file.
+* Know some of the most common tags, like `title`, `h1`, `ul`, and `li`.
 
 If you know these, you should be all set to jump in and give this project a shot!
 
@@ -51,11 +50,11 @@ Wondering what this project will look like when you've completed it? [Follow thi
 
 
 
-## Setup
+## Setting Up The Project
 
-In order to get this working, you'll need to have [Git](https://git-scm.com/) installed, and have a GitHub account. If this is your first time setting up Git, I'd recommend checking out Code School's video on How to Setup Git for Code School Projects in 5 Minutes to learn what you need to know.
+In order to get this working, you'll need to have [Git](https://git-scm.com/) installed on your computer, and have a GitHub account. If this is your first time setting up Git, I'd recommend checking out Pluralsight's video on How to Setup Git for Pluralsight Projects in 5 Minutes to learn what you need to know.
 
-To get started, fork this repository to your account and clone it down locally. We'll be editing the "index.html" file in the root directory for this project.
+The very first step is to fork this repository to your personal GitHub account and clone it down locally. We'll be editing the `index.html` file in the root directory for this project.
 
 ### Associate Project with Pluralsight
 
@@ -64,7 +63,7 @@ After cloning this repository down, copy the ".projects_config" file from the [H
 [//]: # (install: "npm install")
 ### Installation
 
-Run the following command to install all dependencies.
+Run the following command from root folder of the `HelloPluralsightProject` to install all dependencies.
 
 ```
 $ npm install
@@ -74,13 +73,13 @@ $ npm install
 [//]: # (test-watch: "npm test-watch")
 ### Verify Setup
 
-In order to verify that everything is setup correctly, run the following command. You should see a list of failing tests. This is good! Each of these tests corresponds to something we'll be working on in this project. By the end, all of the tests will pass.
+In order to verify that everything is setup correctly, run the following command, which should show you a list of failing tests. This is good! Each of these tests corresponds to something we'll be working on in this project. By the end, all of the tests will pass.
 
 ```
 $ npm test
 ```
 
-We recommend running the following command, which will watch for any changes to your files, then run your tests automatically. This makes things easier, since you'll see updates immediately when you save your files! You can run this command once, then look back at it after you've made changes to the "index.html" file.
+We recommend also running the following command, which will watch for any changes to your files and then re-run the tests automatically. This makes things easier, since you'll see updates immediately when you save your files! You can run this command once, and then look back at the terminal after you've made changes to the "index.html" file.
 
 ```
 $ npm test-watch
@@ -95,22 +94,22 @@ $ npm test-watch
 [//]: # (task_id: @title)
 ### Add a Page Title
 
-Create a `title` element with your name.
+Create a `title` element with your name that's a child of the `head` element.
 
 [//]: # (task_id: @h1)
 ### Add a Header Element
 
-Add an `h1` saying "Hello, Pluralsight!".
+Add an `h1` that's a child of the `body` that says "Hello, Pluralsight!".
 
 [//]: # (task_id: @ul)
 ## Create an Unordered List
 
-Create a `ul` element with at least 2 `li` elements.
+Create a `ul` element that's a child of the `body` that contains at least 2 `li` elements.
 
 [//]: # (task_id: @li)
 ## What Do You Want to Learn?
 
-In these `li` elements, list out what you want to learn.
+In each of those `li` elements, list out one thing you'd like to learn.
 
 
 
